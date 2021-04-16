@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <pubdate>20120216</pubdate>
+                <title>VistaBallotAreas</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>In response to the Help America Vote Act (HAVA) passed in 2002, the Office of Elections in the Lieutenant Governor's, designed, developed and implemented a statewide database, the Utah Voter Information and State Tracking Application (VISTA) In 2011, the VISTA project began closely integrating county-level GIS mapping data representing the precinct and subprecinct boundaries that define the ballot areas for the state. This dataset is the digital map dataset that the VISTA project is actively using for their GIS integration. VISTA Precincts and Sub Precincts are tracked using a unique identifier of up to 10 characters to represent a specific balloting unit (wherein all voters in a specified precinct receive the same ballot). Precincts are identified using up to 6 characters; example: SJ001A or 007. Sub Precincts are identified using a 6 character precinct identifier, a “:” character, and up to 4 characters for the Sub Precinct identifier; example: SJ0003:SW2. Data is current as of June 31, 2019.</abstract>
+            <purpose>VistaBallotAreas are voting precincts for all 29 counties in Utah. Precincts boundaries are submitted by County Clerk offices.  They provide Precinct and Sub-precinct data for the Voter Information and State Tracking Application (Vista).</purpose>
+            <supplinf>The VISTABallotAreas layer is updated frequently and it is recommended that GIS users access this data via an ArcSDE connection. Please note that the metadata in SDE will contain the most recent update date and individual county 'last updated' dates are contained in the RcvdDate field. Boundary Geometry guidelines provided to Utah County Clerks and their GIS staff: GIS Format Data Files: All new Precinct - Sub Precinct Area data should be provided in a shapefile (please include the.shp, .shx, .dbf, .prj, and .xml component files) or file geodatabase format. An empty shapefile and filegeodatabase schema are available for download at: ftp://ftp.agrc.utah.gov/VISTA/Vista_GISBallotAreas_Empty.zip. Full, Seamless Coverage: Ballot Area polygons should seamlessly cover the full geographic extent of the county. The following topological rules should hold valid: 1) must not overlap; and 2) must not have gaps. One Record Per Unique Precinct - Sub Precinct Area: Each VISTA Precinct or Sub Precinct will have one and only one geographic area record. Where two or more areas have the same VISTA Precinct or Sub Precinct identification number, these should be merged into a single geographic feature and corresponding attribute record. No Precinct-level polygon should be submitted if that Precinct is subdivided into Sub Precincts . Standard Coordinate System: Ideally, all submissions will represent Precinct - Sub Precinct Areas using Universal Transverse Mercator coordinates (NAD83, Zone 12 North). However, boundaries stored in other industry standard coordinate systems will be accepted if they are both defined within the data file(s) and documented in the metadata (see below).</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20120216</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>see RcvdDate field for individual counties</current>
+        </timeperd>
+        <status>
+            <progress>In work</progress>
+            <update>Continually</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-114.276161</westbc>
+                <eastbc>-108.899225</eastbc>
+                <northbc>42.034184</northbc>
+                <southbc>36.959693</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Elections</themekey>
+                <themekey>HAVA</themekey>
+                <themekey>VISTA</themekey>
+                <themekey>Voter</themekey>
+                <themekey>Political</themekey>
+                <themekey>Precincts</themekey>
+                <themekey>Subprecincts</themekey>
+                <themekey>Voting</themekey>
+                <themekey>Boundaries</themekey>
+            </theme>
+            <theme>
+                <themekt>ISO 19115 Topic Categories</themekt>
+                <themekey>boundaries</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>None</useconst>
+        <datacred>Utah AGRC, Utah Counties, Lt. Governor's Elections Office</datacred>
+        <native>Esri ArcGIS 12.5.1.22081</native>
+    </idinfo>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>GT-polygon composed of chains</sdtstype>
+                <ptvctcnt>3016</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>VistaBallotAreas</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        
+                    
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                        
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CountyID</attrlabl>
+                <attrdef>County ID Number	Beaver = 1, Box Elder = 2, Cache = 3,..., Weber = 29</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>VistaID</attrlabl>
+                <attrdef>Ballot Area ID. Composed of the VISTA Precinct Name and where applicable, a colon (:) and the VISTA Sub Precinct ID. VistaIDs must exactly match one, and only one precinct or sub precinct in the state VISTA database. Convention is 6char:4char	BRGC09:CFD,</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>PrecinctID</attrlabl>
+                <attrdef>PrecinctID	Text	6	VISTA database unique identifier for Precinct area. Up to six alphanumeric characters	BRGC09, SJ001A,</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SubPrecinctID</attrlabl>
+                <attrdef>VISTA database unique identifier for subprecinct area. Up to 4 alphanumeric characters	CFD, null**, SW2, null**, B</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>VersionNbr</attrlabl>
+                <attrdef>County version number for plan	1.0, 12B, etc  NOT REQUIRED</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>EffectiveDate</attrlabl>
+                <attrdef>The planned start date for a Ballot Area ... if unknown then date is 01/01/2011 </attrdef>
+            </attr>
+            <attr>
+                <attrlabl>AliasName</attrlabl>
+                <attrdef>maybe used to show common name for precinct</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Comments</attrlabl>
+                <attrdef>comments, county submission contact notes</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RcvdDate</attrlabl>
+                <attrdef>THIS IS THE DATE THE CURRENT BOUNDARIES WERE RECEIVED FROM THE COUNTY (AND LOADED INTO THIS DATASET)</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                                        
+                    
+                    <udom>Coordinates defining the features.</udom>
+                                        
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>GlobalID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Shape.STArea()</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>Shape.STLength()</attrlabl>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20200723</metd>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
