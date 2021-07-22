@@ -1,4 +1,4 @@
-# vest-wa-2016
+# vest-ut-2018
 
 Partner data validation for Utah, 2018. Data Partners: VEST.
 
