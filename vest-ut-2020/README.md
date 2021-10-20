@@ -15,6 +15,14 @@ Please reach out to info@redistrictingdatahub.org to reach our support team if y
   - Online: [Harvard Dataverse Link](https://dataverse.harvard.edu/file.xhtml?fileId=5206372&version=21.0)
   - Accessed: 10/20/21
 
+- UT Precinct-Level Election Results
+  - Online: [Open Elections](https://github.com/openelections/openelections-data-ut/tree/master/2020)
+  - Accessed: 10/20/21
+
+- UT Precinct Shapefile
+  - Online: [Utah Geospatial Resource Center](https://gis.utah.gov/data/political/voter-precincts/)
+  - Accessed: 10/20/21 
+
 ## File processing
 
 - `vest-ut-2020-validation.ipynb` - documentation in markdown cells and comments
