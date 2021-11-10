@@ -1,6 +1,6 @@
-# vest-ut-2020
+# vest-ut-2016
 
-Our final validation report for this dataset is available [here](https://redistrictingdatahub.org/dataset/vest-2020-utah-precinct-boundaries-and-election-results-shapefile/).
+Our final validation report for this dataset is available [here](https://redistrictingdatahub.org/dataset/vest-2016-utah-precinct-election-results-shapefile/).
 
 We do not have the raw data sources available on this Github due to file constraints, but we are happy to share them if needed. 
 
